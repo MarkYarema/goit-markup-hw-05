@@ -54,8 +54,8 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button type="button" class="hero-btn">Замовити послугу</button>
-        </div>
+          <button type="button" class="hero-btn" data-modal-open>Замовити послугу</button>
+          
       </section>
       <!-- Specialty -->
       <section class="specialty">
@@ -115,31 +115,40 @@
           <h2 class="draft-title section-title">Чим ми займаємося</h2>
           <ul class="draft-list list">
             <li class="draft-item">
-              <img
-                src="./images/img-work-1.jpg"
-                alt="Тип діяльності компанії"
-                width="370"
-                height="294"
-                class="draft-img"
-              />
+              <div class="draft-position">
+                <img
+                  src="./images/img-work-1.jpg"
+                  alt="Тип діяльності компанії"
+                  width="370"
+                  height="294"
+                  class="draft-img"
+                />
+                <div class="draft-container"><p class="draft-text">Десктопні додатки</p></div>
+              </div>
             </li>
             <li class="draft-item">
-              <img
-                src="./images/img-work-2.jpg"
-                alt="Тип діяльності компанії"
-                width="370"
-                height="294"
-                class="draft-img"
-              />
+              <div class="draft-position">
+                <img
+                  src="./images/img-work-2.jpg"
+                  alt="Тип діяльності компанії"
+                  width="370"
+                  height="294"
+                  class="draft-img"
+                />
+                <div class="draft-container"><p class="draft-text">Мобільні додатки</p></div>
+              </div>
             </li>
             <li class="draft-item">
-              <img
-                src="./images/img-work-3.jpg"
-                alt="Тип діяльності компанії"
-                width="370"
-                height="294"
-                class="draft-img"
-              />
+              <div class="draft-position">
+                <img
+                  src="./images/img-work-3.jpg"
+                  alt="Тип діяльності компанії"
+                  width="370"
+                  height="294"
+                  class="draft-img"
+                />
+                <div class="draft-container"><p class="draft-text">Дизайнерські рішення</p></div>
+              </div>
             </li>
           </ul>
         </div>
@@ -436,5 +445,16 @@
         </div>
       </div>
     </footer>
+      <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="close" data-modal-close>
+                <svg class="close-btn" width="18" height="18">
+                  <use href="./images/symbol-defs-specialty.svg#icon-close-btn"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
