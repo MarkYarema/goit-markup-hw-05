@@ -553,8 +553,7 @@ p {
   min-width: 528px;
   min-height: 581px;
   background-color: var(--primary-link-color);
-  display: flex;
-  flex-direction: row-reverse;
+  border-radius: 4px;
 
   position: absolute;
   top: 50%;
@@ -573,8 +572,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 8px;
-  margin-right: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
   transition-property: box-shadow;
   transition-duration: 250ms;
